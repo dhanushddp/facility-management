@@ -1,0 +1,31 @@
+.slaView1{
+    width: 50%;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.thirdRow{
+    display: flex;
+}
+.containerView1{
+    overflow: auto;
+    height: 90%;
+}
+.modalView{
+    overflow: auto;
+    height: 90%;
+}
+.fourthRow{
+    display: flex;
+
+}
+
+@media screen and (max-width:477px){
+    .thirdRow{
+        display: block;
+    }
+    .fourthRow{
+        display: block;
+    
+    }
+}

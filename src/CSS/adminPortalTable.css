@@ -1,0 +1,196 @@
+body {
+    font-family: 'lato', sans-serif;
+  }
+  .col-7admin{
+    text-align: end;
+  }
+  .containeradmin {
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px; */
+  }
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  h2 small {
+    font-size: 0.5em;
+  }
+  .responsive-tableadmin{
+    width: 92%;
+    margin-left:10px;  
+  }
+  .responsive-tableadmin li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .responsive-tableadmin .table-headeradmin {
+    background-color: #95a5a6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+  
+  }
+  .responsive-tableadmin .table-rowadmin {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-tableadmin .col-1admin {
+    flex-basis: 5%;
+  }
+  .responsive-tableadmin .col-2admin {
+    flex-basis: 13%;
+  }
+  .responsive-tableadmin .col-3admin {
+    flex-basis: 15%;
+  }
+  .responsive-tableadmin .col31admin{
+    flex-basis:13%
+  }
+  .responsive-tableadmin .col-4admin {
+    flex-basis: 7%;
+  }
+  .responsive-tableadmin .col-5admin {
+    flex-basis: 10%;
+  }
+  .responsive-tableadmin .col-6admin {
+    flex-basis: 10%;
+  }
+  .responsive-tableadmin .col-7admin {
+    flex-basis: 10%;
+  }
+
+  
+  .redadmin:hover{
+    background-color: rgb(252, 24, 24);
+    color:white;
+  }
+  .yellowadmin:hover{
+    background-color: rgb(255, 193, 94);
+    color:rgb(0, 0, 0);
+  }
+  .greenadmin:hover{
+    background-color: rgb(155, 255, 151);
+    color:rgb(0, 0, 0);
+  }
+  .redadmin{
+    border:1px solid red;
+    color:red;
+    border-radius:20px;
+    padding-top:5px;
+    block-size: fit-content;
+    box-shadow: 2px 5px 3px 0px;
+
+  
+  }
+  
+  .yellowadmin{
+    border:1px solid orange;
+    color: orange;
+    border-radius:20px;
+    padding-top:5px;
+    block-size: fit-content;
+    box-shadow: 2px 5px 3px 0px;
+
+  }
+  
+  .greenadmin{
+    border:1px solid green;
+    color: green;
+    border-radius:20px;
+    padding-top:5px;
+    block-size: fit-content;
+    box-shadow: 2px 5px 3px 0px;
+
+  }
+
+  .Backadmin{
+
+    padding: 10px 10px 10px 10px;
+    width:fit-content;
+    border-radius: 20px;
+    box-shadow: 4px 5px 3px 0px;
+    border:2px solid #f1eaea;
+    color: rgb(47, 89, 89);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  .Nextadmin{
+  
+  
+      padding: 10px 10px 10px 10px;
+      width:fit-content;
+      border-radius: 20px;
+      box-shadow: 4px 5px 3px 0px;
+      border:2px solid #f1eaea;
+      color: rgb(47, 89, 89);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color:rgb(205, 238, 238);
+    
+  }
+  
+  .Backadmin:hover{
+    background-color: #ffccc3;
+  }
+  .Nextadmin:hover{
+    background-color: #91ff9a;
+  }
+  .pageNatiomadmin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  
+  
+  
+  @media all and (max-width: 767px) {
+    .responsive-tableadmin .table-headeradmin {
+      display: none;
+   }
+    .responsive-tableadmin li {
+      display: block;
+   }
+    .responsive-tableadmin .coladmin {
+      flex-basis: 100%;
+   }
+    .responsive-tableadmin .coladmin {
+      display: flex;
+      padding: 10px 0;
+   }
+    .responsive-tableadmin .coladmin:before {
+      color: #6c7a89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+   }
+  }
+
+  .open1{
+    font-weight: 700;
+    color: #4e694ec0;
+  }
+  .reviewed1{
+    font-weight: 700;
+    color: #a49952c0;
+  }
+  .complete1{
+    font-weight: 700;
+    color: #7a75a8c0;
+  }
+  .overdue1{
+    font-weight: 700;
+    color: #ff768a;
+  }
+
+  

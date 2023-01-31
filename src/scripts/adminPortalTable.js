@@ -21,6 +21,7 @@ export default{
             this.getAdminSelectedInfo(data)
         },
         NextPagination(){
+
              this.getNextPageNumber()
              axios.get(`/one/issue/details/${this.retrievePageNumber}`).then((res)=>{
                 this.getAdminRequestApi(res.data)
@@ -29,13 +30,17 @@ export default{
              console.log(this.retrievePageNumber)
         },
         BackPagination(){
-            this.getBackPageNumber()
-            axios.get(`/one/issue/details/${this.retrievePageNumber}`).then((res)=>{
-                this.getAdminRequestApi(res.data)
-                  console.log(res)
-             })
-             console.log(this.retrievePageNumber)
-            console.log(this.retrievePageNumber)
+            if(this.retrievePageNumber!=0)
+            {
+                this.getBackPageNumber()
+                axios.get(`/one/issue/details/${this.retrievePageNumber}`).then((res)=>{
+                    this.getAdminRequestApi(res.data)
+                      console.log(res)
+                 })
+                 console.log(this.retrievePageNumber)
+                console.log(this.retrievePageNumber)
+            }
+       
 
         }
 

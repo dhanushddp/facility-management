@@ -30,36 +30,38 @@ export default{
             this.getAdminCommentFlagAction(false)
         },
         Reviewed(){
-            let review = "REVIEWED"
-              console.log("reviewed")
-              axios.put(`/one/issue/updateStatus?issueId=${this.retrieveAdminSelectedInfo.issueId}&status=${review}`).then((response)=>{
-                console.log(response)
-                axios.get(`/one/issue/viewAll`).then(
-                    (response) => {
-                        this.getAdminRequestApi(response.data.issues)
-                    }
-                ).catch((response) => {
-                    console.log(response)
-                }),
-                axios.get(`http://10.30.1.12:8081/issue/getCount`).then(
-                    (response)=>{
-                        console.log("count",response.data)
-                       this.getRequestCount(response.data)
-                    }
-                   ).catch((response)=>{
-                    console.log(response)
-                   })
-               
-              })
-              this.getAdminCommentFlagAction(false)
-              this.message1 = "REVIEWED "
-
-              this.getCloseConfirmBoxFlag(true)
-              setTimeout(() => {
-                this.getCloseConfirmBoxFlag(false)
-
-              }, 2000);
-
+                let review = "REVIEWED"
+                console.log("reviewed")
+                axios.put(`/one/issue/updateStatus?issueId=${this.retrieveAdminSelectedInfo.issueId}&status=${review}`).then((response)=>{
+                  console.log(response)
+                  axios.get(`/one/issue/viewAll`).then(
+                      (response) => {
+                          this.getAdminRequestApi(response.data.issues)
+                      }
+                  ).catch((response) => {
+                      console.log(response)
+                  }),
+                  axios.get(`http://10.30.1.12:8081/issue/getCount`).then(
+                      (response)=>{
+                          console.log("count",response.data)
+                         this.getRequestCount(response.data)
+                      }
+                     ).catch((response)=>{
+                      console.log(response)
+                     })
+                 
+                })
+                this.getAdminCommentFlagAction(false)
+                this.message1 = "REVIEWED "
+  
+                this.getCloseConfirmBoxFlag(true)
+                setTimeout(() => {
+                  this.getCloseConfirmBoxFlag(false)
+  
+                }, 2000);
+  
+            
+            
 
         },
         Completed(){

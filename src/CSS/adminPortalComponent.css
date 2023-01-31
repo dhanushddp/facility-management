@@ -228,23 +228,7 @@
       
 
    }
-   /* .category:focus{
-    outline: none;
-    border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
-  
-  }
-   .category{
-    width:90%;
-    height:50px;
-    font-size: 20px;
-    border-radius: 15px;
-    border:none;
-    color: grey;
-  
-  
-  
-  } */
+   
    @media screen and (max-width:396px){
     .overview{
         display: flex;
